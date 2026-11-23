@@ -1,0 +1,13 @@
+[options]
+mode bmc
+depth 20
+
+[engines]
+ only
+
+[script]
+read -formal -D FORMAL rtl/sv/dash_core.sv
+prep -top dash_core
+
+[files]
+rtl/sv/dash_core.sv

@@ -1,0 +1,39 @@
+# DASH build and simulator output
+build/
+*.bo
+*.ba
+*.sched
+*.cxx
+*.o
+*.so
+*.out
+*.vcd
+*.fst
+*.log
+*.smt2
+*.yslog
+*.swp
+
+# BSV-generated Verilog and simulator products
+rtl/bsv/mkDashTop.v
+mkTbDash*
+model_mkTbDash*
+tb/bsv/mkTbDash*
+
+# Local tool installations and embedded tool checkouts
+.venv/
+__pycache__/
+sby/
+
+# External accelerator staging locations. Accelerator RTL must remain outside
+# this repository and must never be copied into the DASH tree.
+external/
+vendor/
+accelerators/
+rtl/external/
+rtl/vendor/
+integration/external/
+
+# Editor/OS noise
+.DS_Store
+*.bak
